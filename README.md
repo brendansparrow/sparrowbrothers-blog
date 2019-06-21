@@ -1,19 +1,13 @@
-# A simple starter kit for Eleventy
+# A simple blog site
 
-Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend it for yourself.
-
-Get started now by **[deploying Hylia to Netlify.](https://app.netlify.com/start/deploy?repository=https://github.com/andybelldesign/hylia)**
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/andybelldesign/hylia)
-
-<img src="https://hankchizljaw.imgix.net/hylia-github.jpg?auto=format&q=60" width="550" />
+This is a simple blog site based on Hylia, a lightweight [Eleventy](https://11ty.io) starter kit with [Netlify CMS](https://www.netlifycms.org/).
 
 ## Features
 
 Hylia version 0.1.0 features:
 
 ✍️ A pre-configured [Netlify CMS](https://www.netlifycms.org/) setup  
-🎨 Customisable design tokens to make it your own  
+🎨 Customisable design tokens 
 🌍 Customisable global data and navigation  
 📂 Tags and tag archives  
 ✅ Progressively enhanced, semantic and accessible    
@@ -41,19 +35,10 @@ Hylia version 0.1.0 features:
 
 ### Method one: One-Click Deploy to Netlify
 
-You can [deploy Hylia to Netlify with one click](https://app.netlify.com/start/deploy?repository=https://github.com/andybelldesign/hylia) and you’ll be up and running in minutes!
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/andybelldesign/hylia)
 
 I recorded a quick start video of me deploying Hylia to Netlify and getting the CMS set up. [Check it out here](https://youtu.be/0hM_0BH-Y_A). 
 
-
-### Method two: Clone / Fork
-
-1. Clone or fork this repo: `git clone https://github.com/andybelldesign/hylia`
-2. `cd` into the project directory and run `npm install`
-3. Once all the dependencies are installed run `npm start`
-4. Open your browser at `http://localhost:8080` and away you go! 
 
 ## Terminal commands 
 
@@ -83,14 +68,6 @@ npm run sass:tokens
 
 ## Getting started with the CMS
 
-Before you can use the CMS, you need to do some config in Netlify. Luckily they provide a [very handy guide to get started](https://www.netlify.com/docs/identity/).
-
-In short, though:
-
-- Once you’ve set up the site on Netlify, go to “Settings” > “Identity” and enable Identity
-- Scroll down to the “Git Gateway” area, click “Enable Git Gateway” and follow the steps
-- Click the “Identity” tab at the top
-- Once you’ve enabled identity, click “Invite Users”
 - Check the invite link in your inbox and click the link in the email that’s sent to you
 - Set a password in the popup box
 - Go to `/admin` on your site and login 
@@ -110,7 +87,7 @@ Although Hylia has a pretty simple design, you can configure the core design tok
 
 To change the design tokens in the CMS, find the “Globals” in the sidebar then in the presented options, select “Theme Settings”. 
 
-To change the design tokens directly, edit [`_src/data/tokens.json`](https://github.com/andybelldesign/hylia/blob/master/src/_data/tokens.json). 
+To change the design tokens directly, edit `_src/data/tokens.json`.
 
 The tokens are converted into maps that the Sass uses to compile the front-end CSS, so make sure that you maintain the correct structure of `tokens.json`.
 
@@ -118,11 +95,11 @@ The tokens are converted into maps that the Sass uses to compile the front-end C
 
 Your version of Hylia ships with a Styleguide by default. You can see a demo of the Styleguide at <https://hylia.website/styleguide/>.
 
-You can edit the Styleguide by opening [`src/styleguide.njk`](https://github.com/andybelldesign/hylia/blob/master/src/styleguide.njk). If you don’t want the Styleguide, delete that file and the page will vanish.
+You can edit the Styleguide by opening `src/styleguide.njk`. If you don’t want the Styleguide, delete that file and the page will vanish.
 
 ## Sass
 
-Hylia is based on the [WIP v2 version of Stalfos](https://github.com/andybelldesign/stalfos/tree/feature/v2), which currently has no documentation (I know, I’m bad). Here is some very basic documentation for elements of the new framework that you will encounter on this project.
+Hylia is based on the [WIP v2 version of Stalfos](https://github.com/andybelldesign/stalfos/tree/feature/v2), which currently has no documentation. Here is some very basic documentation for elements of the new framework that you will encounter on this project.
 
 ### Configuration
 
@@ -197,15 +174,4 @@ The basic CMS setup allows you to edit the following:
 - **Global site data**: Various bits of global site data such as your url, title, posts per page and author details
 - **Navigation**: Edit your primary navigation items
 - **Theme**: Edit the design tokens that power the site’s theme
-
-## Get involved 
-
-This project is _super_ early and feedback is very much welcome. In order to keep things running smooth, please consult the [contribution guide and code of conduct](https://github.com/andybelldesign/hylia/blob/master/contributing.md).
-
-The stuff that I need the most help with is:
-
-- Documentation
-- Webmentions 
-- Performance
-
 
